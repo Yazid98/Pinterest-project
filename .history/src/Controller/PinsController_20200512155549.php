@@ -13,7 +13,10 @@ class PinsController extends AbstractController
      */
     public function index() :Response
     {
+
         $pin = new Pin;
+
+        var_dump($pin);
 
         return $this->render('pins/index.html.twig');
     }

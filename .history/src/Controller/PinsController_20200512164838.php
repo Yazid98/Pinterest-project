@@ -15,6 +15,8 @@ class PinsController extends AbstractController
     {
         $pin = new Pin;
 
+        dd($pin);
+
         return $this->render('pins/index.html.twig');
     }
 }
