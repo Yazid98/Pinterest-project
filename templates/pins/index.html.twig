@@ -1,1 +1,29 @@
-<h1> PinsIndex </h1>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Pinterest-projet</title>
+
+</head>
+
+<body>
+
+		<h1> Pins Index </h1>
+
+		{% for pin in pins %}
+
+			<article> 
+
+			  <h1> {{ (pin.title) }} </h1>	 
+
+				<p> {{ (pin.description()) }} </p>
+
+			</article>
+
+		{% endfor %}
+
+</body>
+
+</html>
